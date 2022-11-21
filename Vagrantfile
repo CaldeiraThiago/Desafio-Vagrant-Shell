@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.network "public_network"
-  config.vm.hostname "Thiago_Caldeira"
+  config.vm.hostname = "Thiago_Caldeira"
 
   config.vm.synced_folder "../site", "/var/www/html"
 
